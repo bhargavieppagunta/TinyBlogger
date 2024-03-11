@@ -8,6 +8,7 @@
     <title>Blog</title>
 </head>
 <body>
+<?php include("app/includes/header.php"); ?>
     <!-- Page Wrapper -->
     <div class="page-wrapper">
         <!--Content-->
@@ -16,6 +17,8 @@
             <div class="main-content">
             <h1 class="recent-post-title">Recent Posts</h1>
                     <div class="post clearfix">
+                        <img src="" class="post-image" alt="">
+                        <div class="post-preview">
                             <h2><a href="#">iPhone 15, iPhone 15 Pro launched with new camera, titanium frame</a></h2>
                             <i class="far fa-user">&nbsp;Bhargavi</i>
                             &nbsp;
@@ -27,7 +30,7 @@
                         </div>
                     </div>
                     <div class="post clearfix">
-                        
+                        <img src="" class="post-image" alt="">
                         <div class="post-preview">
                             <h2><a href="#">Ind vs Eng: Jasprit Bumrah Rested for the Fourth Test</a></h2>
                             <i class="far fa-user">&nbsp;Bhargavi</i>
@@ -39,7 +42,8 @@
                             <a href="#" class="btn read-more">Read More</a>
                         </div>
                     </div>
-                    <div class="post clearfix"> 
+                    <div class="post clearfix">
+                        <img src="" class="post-image" alt="">
                         <div class="post-preview">
                             <h2><a href="#">First Gen Z Indian-American to Contest US Senate Race</a></h2>
                             <i class="far fa-user">&nbsp;Bhargavi</i>
@@ -51,7 +55,8 @@
                             <a href="#" class="btn read-more">Read More</a>
                         </div>
                     </div>
-                    <div class="post clearfix">                       
+                    <div class="post clearfix">
+                        <img src="" class="post-image" alt="">
                         <div class="post-preview">
                             <h2><a href="#">Ind vs Eng: Jasprit Bumrah Rested for the Fourth Test</a></h2>
                             <i class="far fa-user">&nbsp;Bhargavi</i>
@@ -64,6 +69,7 @@
                         </div>
                     </div>
                     <div class="post clearfix">
+                        <img src="" class="post-image" alt="">
                         <div class="post-preview">
                             <h2><a href="#">First Gen Z Indian-American to Contest US Senate Race</a></h2>
                             <i class="far fa-user">&nbsp;Bhargavi</i>
@@ -76,6 +82,7 @@
                         </div>
                     </div>
                     <div class="post clearfix">
+                        <img src="" class="post-image" alt="">
                         <div class="post-preview">
                             <h2><a href="#">Ind vs Eng: Jasprit Bumrah Rested for the Fourth Test</a></h2>
                             <i class="far fa-user">&nbsp;Bhargavi</i>
@@ -92,5 +99,6 @@
         <!-- //Content -->
     </div>
     <!-- //Page Wrapper -->
+    <?php include("app/includes/footer.php"); ?>
 </body>
 </html>
