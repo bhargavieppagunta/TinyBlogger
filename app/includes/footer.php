@@ -17,7 +17,7 @@
                 <h2>Quick Links</h2>
                 <br>
                 <ul>
-                    <a href="">
+                    <a href="events.php">
                         <li>Events</li>
                     
                     <a href="">

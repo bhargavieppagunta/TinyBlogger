@@ -1,14 +1,14 @@
 <header>
-    <a href="" class="logo">
+    <a href="index.php" class="logo">
         <h2 class="logo-text"><span>Tiny Blogger</span></h2>
     </a>
     <i class="fa fa-bars menu-toggle"></i>
     <ul class="nav">
         <li>
-            <a href="">Home</a>
+            <a href="index.php">Home</a>
         </li>
         <li>
-            <a href="">About</a>
+            <a href="about.php">About</a>
         </li>
         <li>
             <ul>

@@ -101,6 +101,14 @@ header .menu-toggle {
     color: #198004dc;
 }
 
+.post-slider {
+    position: relative;
+}
+.post-slider .slider-title {
+    text-align: center;
+    margin: 30px auto;
+}
+
 /* FOOTER*/
 .footer {
     background: #303036;
