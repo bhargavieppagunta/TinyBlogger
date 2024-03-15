@@ -16,7 +16,7 @@
                 <li><a href="#" class="logout">Logout</a></li> 
             </ul>
         </li>
-            <li><a href="">Sign Up</a></li>
-            <li><a href="">Login</a></li>
+            <li><a href="register.php">Sign Up</a></li>
+            <li><a href="login.php">Login</a></li>
     </ul>
 </header>

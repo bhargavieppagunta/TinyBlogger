@@ -271,3 +271,30 @@ header .menu-toggle {
     padding: 15px 0px 15px 0px;
     border-bottom: 1px solid #e0e0e0; 
 }
+
+/* AUTH PAGES */
+.auth-content {
+    width: 30%;
+    margin: 50px auto 50px;
+    padding: 20px;
+    border: 1px solid #1a1a1a;
+    background: white;
+    border-radius: 5px;
+}
+.auth-content .form-title {
+    text-align: center;
+}
+.auth-content form div {
+    margin-bottom: 10px;
+}
+.auth-content form p {
+    text-align: center;
+}
+.auth-content form p a {
+    text-decoration: underline;
+    color: blue;
+}
+.auth-content form a {
+    text-decoration: underline;
+    color: blue;
+}
