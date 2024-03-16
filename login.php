@@ -29,7 +29,7 @@
             </div>
             <p>Register --> <a href='register.php'>Sign Up</a></p>
             <div style="font-size:0.8em; text-align:center;">
-                <a href='#'>
+                <a href='forgot_password.php'>
                     Forgot your Password?
                 </a>
             </div>
