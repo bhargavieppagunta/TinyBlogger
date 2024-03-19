@@ -17,7 +17,7 @@
             <div class="main-content">
             <h1 class="recent-post-title">Recent Posts</h1>
                     <div class="post clearfix">
-                        <img src="" class="post-image" alt="">
+                        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch_GEO_US?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1693009284541" class="post-image" alt="">
                         <div class="post-preview">
                             <h2><a href="single.php">iPhone 15, iPhone 15 Pro launched with new camera, titanium frame</a></h2>
                             <i class="far fa-user">&nbsp;Bhargavi</i>
@@ -30,7 +30,7 @@
                         </div>
                     </div>
                     <div class="post clearfix">
-                        <img src="" class="post-image" alt="">
+                        <img src="https://images.thequint.com/thequint%2F2024-02%2F4c7972f5-91ad-4482-8696-16ae93d9e03e%2Fbumrah_2.webp?auto=format%2Ccompress&fmt=webp&width=720" class="post-image" alt="">
                         <div class="post-preview">
                             <h2><a href="single.php">Ind vs Eng: Jasprit Bumrah Rested for the Fourth Test</a></h2>
                             <i class="far fa-user">&nbsp;Bhargavi</i>
@@ -43,7 +43,7 @@
                         </div>
                     </div>
                     <div class="post clearfix">
-                        <img src="" class="post-image" alt="">
+                        <img src="https://images.thequint.com/thequint%2F2024-02%2Fc1f6098f-4283-4ce4-a092-ef45d83d4b32%2Fhero_image_nre_Recovered_Recovered_Recovered_Recovered_Recovered.jpg?auto=format%2Ccompress&fmt=webp&width=720" class="post-image" alt="">
                         <div class="post-preview">
                             <h2><a href="single.php">First Gen Z Indian-American to Contest US Senate Race</a></h2>
                             <i class="far fa-user">&nbsp;Bhargavi</i>
@@ -56,7 +56,7 @@
                         </div>
                     </div>
                     <div class="post clearfix">
-                        <img src="" class="post-image" alt="">
+                        <img src="https://images.thequint.com/thequint%2F2024-02%2F4c7972f5-91ad-4482-8696-16ae93d9e03e%2Fbumrah_2.webp?auto=format%2Ccompress&fmt=webp&width=720" class="post-image" alt="">
                         <div class="post-preview">
                             <h2><a href="single.php">Ind vs Eng: Jasprit Bumrah Rested for the Fourth Test</a></h2>
                             <i class="far fa-user">&nbsp;Bhargavi</i>
@@ -69,7 +69,7 @@
                         </div>
                     </div>
                     <div class="post clearfix">
-                        <img src="" class="post-image" alt="">
+                        <img src="https://images.thequint.com/thequint%2F2024-02%2Fc1f6098f-4283-4ce4-a092-ef45d83d4b32%2Fhero_image_nre_Recovered_Recovered_Recovered_Recovered_Recovered.jpg?auto=format%2Ccompress&fmt=webp&width=720" class="post-image" alt="">
                         <div class="post-preview">
                             <h2><a href="single.php">First Gen Z Indian-American to Contest US Senate Race</a></h2>
                             <i class="far fa-user">&nbsp;Bhargavi</i>
@@ -82,7 +82,7 @@
                         </div>
                     </div>
                     <div class="post clearfix">
-                        <img src="" class="post-image" alt="">
+                        <img src="https://images.thequint.com/thequint%2F2024-02%2F4c7972f5-91ad-4482-8696-16ae93d9e03e%2Fbumrah_2.webp?auto=format%2Ccompress&fmt=webp&width=720" class="post-image" alt="">
                         <div class="post-preview">
                             <h2><a href="single.php">Ind vs Eng: Jasprit Bumrah Rested for the Fourth Test</a></h2>
                             <i class="far fa-user">&nbsp;Bhargavi</i>
