@@ -28,19 +28,19 @@
                 <div class="section popular">
                     <h2 class="section-title">Latest</h2>
                         <div class="post clearfix">
-                            <img src="#">
+                            <img src="https://images.thequint.com/thequint%2F2023-09%2F280fe436-3c4b-4252-b9a2-e860ad3c2f09%2FIndia_vs_Sri_Lanks_Asia_Cup_Final_2023.jpg?auto=format%2Ccompress&fmt=webp&width=720">
                             <a class="title" href="">
                                 <h4>Asia Cup: SL reach final</h4>
                             </a>
                         </div>
                         <div class="post clearfix">
-                            <img src="#">
+                            <img src="https://images.thequint.com/thequint%2F2023-09%2F280fe436-3c4b-4252-b9a2-e860ad3c2f09%2FIndia_vs_Sri_Lanks_Asia_Cup_Final_2023.jpg?auto=format%2Ccompress&fmt=webp&width=720">
                             <a class="title" href="">
                                 <h4>Asia Cup: SL reach final</h4>
                             </a>
                         </div>
                         <div class="post clearfix">
-                            <img src="#">
+                            <img src="https://images.thequint.com/thequint%2F2023-09%2F280fe436-3c4b-4252-b9a2-e860ad3c2f09%2FIndia_vs_Sri_Lanks_Asia_Cup_Final_2023.jpg?auto=format%2Ccompress&fmt=webp&width=720">
                             <a class="title" href="">
                                 <h4>Asia Cup: SL reach final</h4>
                             </a>
