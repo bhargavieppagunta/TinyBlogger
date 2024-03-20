@@ -1,3 +1,4 @@
+<?php include("path.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
 </head>
 
 <body>
-<?php include("app/includes/header.php"); ?>
+<?php include(ROOT_PATH . "/app/includes/header.php"); ?>
 
 <div class="page-wrapper">
    
@@ -20,7 +21,7 @@
     </div>
 </div>
 
-<?php include("app/includes/footer.php"); ?>
+<?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
    <!--Custom Script-->
     <script src="assets/js/scripts.js"></script>
 </body>

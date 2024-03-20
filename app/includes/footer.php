@@ -17,7 +17,7 @@
                 <h2>Quick Links</h2>
                 <br>
                 <ul>
-                    <a href="events.php">
+                    <a href="<?php echo BASE_URL . '/events.php' ?>">
                         <li>Events</li>
                     
                     <a href="">
