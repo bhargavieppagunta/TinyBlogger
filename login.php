@@ -1,3 +1,4 @@
+<?php include("path.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
     <title>Login</title>
 </head>
 <body>
-<?php include("app/includes/header.php"); ?>
+<?php include(ROOT_PATH . "/app/includes/header.php"); ?>
 
     <div class="auth-content">
         <form action="" method="post">
@@ -27,9 +28,9 @@
             <div>
                 <button type="submit" name="login-btn" class="btn btn-prim btn-big">Login</button>
             </div>
-            <p>Register --> <a href='register.php'>Sign Up</a></p>
+            <p>Register --> <a href="<?php echo BASE_URL . '/register.php' ?>">Sign Up</a></p>
             <div style="font-size:0.8em; text-align:center;">
-                <a href='forgot_password.php'>
+                <a href="<?php echo BASE_URL . '/forgot_password.php'?>">
                     Forgot your Password?
                 </a>
             </div>

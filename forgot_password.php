@@ -1,3 +1,4 @@
+<?php include("path.php") ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,7 +10,7 @@
     <title>Forgot Password</title>
 </head>
 <body>
-<?php include("app/includes/header.php"); ?>
+<?php include(ROOT_PATH . "/app/includes/header.php"); ?>
 
     <div class="auth-content">
         <form action="" method="post">
