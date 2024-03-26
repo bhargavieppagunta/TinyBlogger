@@ -1,0 +1,19 @@
+header {
+    background: #1b3047;
+}
+
+.admin-wrapper {
+    display: flex;
+    height: calc(100% - 66px);
+}
+
+.admin-wrapper .admin-content {
+    flex: 8;
+    height: 100%;
+    padding: 40px 100px 100px;
+    overflow: scroll;
+}
+.admin-content .page-title {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
