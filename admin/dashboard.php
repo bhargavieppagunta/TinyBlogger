@@ -1,4 +1,4 @@
-<?php include('../path.php') ?>?>
+<?php include('../path.php') ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,8 +14,10 @@
 </head>
 
 <body>
+    <?php include(ROOT_PATH . "/app/includes/adminHeader.php"); ?>
     <!--admin wrapper-->
     <div class="admin-wrapper">
+        <?php include(ROOT_PATH . "/app/includes/adminSidebar.php"); ?>
         <!-- Admin Content -->
         <div class="admin-content">
             <div class="content">
