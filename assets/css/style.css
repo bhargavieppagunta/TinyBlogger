@@ -24,6 +24,16 @@ a{
     display: block;
     clear: both;
 }
+.btn {
+    padding: .5rem 1rem;
+    background: #344d70;
+    color: white;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    font-size: 1.08em;
+    font-family: 'Lora', serif;
+}
+
 .text-input {
     padding: .7rem 1rem;
     display: block;
