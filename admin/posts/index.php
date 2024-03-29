@@ -22,8 +22,8 @@
         <!-- Admin Content-->
         <div class="admin-content">
             <div class="button-group">
-                <a href="" class="btn btn-big">Add Post</a>
-                <a href="" class="btn btn-big">Manage Post</a>
+                <a href="create.php" class="btn btn-big">Add Post</a>
+                <a href="index.php" class="btn btn-big">Manage Post</a>
             </div>
             <div class="content">
                 <h2 class="page-title">Manage Posts</h2>
