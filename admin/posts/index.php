@@ -40,7 +40,7 @@
                                 <td>1</td>
                                 <td>iPhone 15, iPhone 15 Pro launched with new camera, titanium frame</td>
                                 <td>Bhargavi</td>
-                                <td><a href="#" class="edit">edit</a></td>
+                                <td><a href="edit.php" class="edit">edit</a></td>
                                 <td><a href="#" class="delete">delete</a></td>
                                 <td><a href="" class="unpublish">unpublish</a></td>
                                 <td><a href="" class="publish">publish</a></td>
@@ -49,7 +49,7 @@
                                 <td>2</td>
                                 <td>iPhone 15, iPhone 15 Pro launched with new camera, titanium frame</td>
                                 <td>Nithin</td>
-                                <td><a href="#" class="edit">edit</a></td>
+                                <td><a href="edit.php" class="edit">edit</a></td>
                                 <td><a href="#" class="delete">delete</a></td>
                                 <td><a href="" class="unpublish">unpublish</a></td>
                                 <td><a href="" class="publish">publish</a></td>
@@ -58,7 +58,7 @@
                                 <td>3</td>
                                 <td>iPhone 15, iPhone 15 Pro launched with new camera, titanium frame</td>
                                 <td>Sahithi</td>
-                                <td><a href="#" class="edit">edit</a></td>
+                                <td><a href="edit.php" class="edit">edit</a></td>
                                 <td><a href="#" class="delete">delete</a></td>
                                 <td><a href="" class="unpublish">unpublish</a></td>
                                 <td><a href="" class="publish">publish</a></td>

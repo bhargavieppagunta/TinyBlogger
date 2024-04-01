@@ -39,21 +39,21 @@
                                 <td>1</td>
                                 <td>Bhargavi</td>
                                 <td>bhargavi@gmail.com</td>
-                                <td><a href="" class="edit">edit</a></td>
+                                <td><a href="edit.php" class="edit">edit</a></td>
                                 <td><a href="" class="delete">delete</a></td>
                             </tr>
                             <tr>
                                 <td>1</td>
                                 <td>Bhargavi</td>
                                 <td>bhargavi@gmail.com</td>
-                                <td><a href="" class="edit">edit</a></td>
+                                <td><a href="edit.php" class="edit">edit</a></td>
                                 <td><a href="" class="delete">delete</a></td>
                             </tr>
                             <tr>
                                 <td>1</td>
                                 <td>Bhargavi</td>
                                 <td>bhargavi@gmail.com</td>
-                                <td><a href="" class="edit">edit</a></td>
+                                <td><a href="edit.php" class="edit">edit</a></td>
                                 <td><a href="" class="delete">delete</a></td>
                             </tr>
                     </tbody>

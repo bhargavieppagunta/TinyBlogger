@@ -33,13 +33,13 @@
                             <tr>
                                 <td>1</td>
                                 <td>Technology</td>
-                                <td><a href="#" class="edit">Edit</a></td>
+                                <td><a href="edit.php" class="edit">Edit</a></td>
                                 <td><a href="#" class="delete">Delete</a></td>
                             </tr>
                             <tr>
                                 <td>2</td>
                                 <td>Sports</td>
-                                <td><a href="#" class="edit">Edit</a></td>
+                                <td><a href="edit.php" class="edit">Edit</a></td>
                                 <td><a href="#" class="delete">Delete</a></td>
                             </tr>
                     </tbody>
