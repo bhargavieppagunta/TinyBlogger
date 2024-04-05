@@ -25,14 +25,15 @@
             </div>
             <div class="content">
                 <h2 class="page-title">Add Topic</h2>
+                <?php include(ROOT_PATH . "/app/helpers/formErrors.php"); ?>
                 <form action="create.php" method="post">
                     <div>
                         <label>Title</label>
-                        <input type="text" name="name" value="" class="text-input">
+                        <input type="text" name="name" value="<?php echo $name ?>" class="text-input">
                     </div>
                     <div>
                         <label>Description</label>
-                        <textarea name="description" id="body"></textarea>
+                        <textarea name="description" id="body"><?php echo $description ?></textarea>
                     </div>
                     <div>
                     <div>

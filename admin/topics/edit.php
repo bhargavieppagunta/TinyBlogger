@@ -24,15 +24,16 @@
             </div>
             <div class="content">
                 <h2 class="page-title">Edit Topic</h2>
+                <?php include(ROOT_PATH . "/app/helpers/formErrors.php"); ?>
                 <form action="create.php" method="post">
-                    <input type="hidden" name="id" value="">
+                    <input type="hidden" name="id" value="<?php echo $id; ?>">
                     <div>
                         <label>Name</label>
-                        <input type="text" name="name" value="" class="text-input">
+                        <input type="text" name="name" value="<?php echo $name; ?>" class="text-input">
                     </div>
                     <div>
                         <label>Description</label>
-                        <textarea name="description" id="body"></textarea>
+                        <textarea name="description" id="body"><?php echo $description; ?> </textarea>
                     </div>
                     <div>
                         <button type="submit" name="update-topic" class=" btn btn-big"><span>Update Topic</span></button>
