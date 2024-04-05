@@ -28,6 +28,8 @@
             <div class="content">
                 <h2 class="page-title">Manage Posts</h2>
 
+                <?php include(ROOT_PATH . "/app/includes/messages.php"); ?>
+
                 <table>
                     <thead>
                         <th>SN</th>
@@ -36,33 +38,23 @@
                         <th colspan="3">Action</th>
                     </thead>
                     <tbody>
+                        <?php foreach ($posts as $key => $post): ?>
                             <tr>
-                                <td>1</td>
-                                <td>iPhone 15, iPhone 15 Pro launched with new camera, titanium frame</td>
-                                <td>Bhargavi</td>
-                                <td><a href="edit.php" class="edit">edit</a></td>
-                                <td><a href="#" class="delete">delete</a></td>
-                                <td><a href="" class="unpublish">unpublish</a></td>
-                                <td><a href="" class="publish">publish</a></td>
+                                <td><?php echo $key + 1; ?></td>
+                                <td><?php echo $post['title'] ?></td>
+                                <td><?php echo $post['username']; ?> </td>
+                                <td><a href="edit.php?id=<?php echo $post['id']; ?>" class="edit">edit</a></td>
+                                <td><a href="edit.php?delete_id=<?php echo $post['id']; ?>" class="delete">delete</a></td>
+                                
+                                <?php if ($post['published']) : ?>
+                                    <td><a href="edit.php?published=0&p_id=<?php echo $post['id']; ?>" class="unpublish">unpublish</a></td>
+                                <?php else : ?>
+                                    <td><a href="edit.php?published=1&p_id=<?php echo $post['id'] ?>" class="publish">publish</a></td>
+                                <?php endif; ?>
+
                             </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>iPhone 15, iPhone 15 Pro launched with new camera, titanium frame</td>
-                                <td>Nithin</td>
-                                <td><a href="edit.php" class="edit">edit</a></td>
-                                <td><a href="#" class="delete">delete</a></td>
-                                <td><a href="" class="unpublish">unpublish</a></td>
-                                <td><a href="" class="publish">publish</a></td>
-                            </tr>
-                            <tr>
-                                <td>3</td>
-                                <td>iPhone 15, iPhone 15 Pro launched with new camera, titanium frame</td>
-                                <td>Sahithi</td>
-                                <td><a href="edit.php" class="edit">edit</a></td>
-                                <td><a href="#" class="delete">delete</a></td>
-                                <td><a href="" class="unpublish">unpublish</a></td>
-                                <td><a href="" class="publish">publish</a></td>
-                            </tr>
+                        <?php endforeach; ?>
+
                     </tbody>
                 </table>
 

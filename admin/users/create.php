@@ -29,29 +29,41 @@
             <div class="content">
                 <h2 class="page-title">Add User</h2>
 
+                <?php include(ROOT_PATH . "/app/helpers/formErrors.php"); ?>
+
                 <form action="create.php" method="post">
                     <div>
                         <label>Username</label>
-                        <input type="text" name="username" value="" class="text-input">
+                        <input type="text" name="username" value="<?php echo $username; ?>" class="text-input">
                     </div>
                     <div>
                         <label>Email</label>
-                        <input type="email" name="email" value="" class="text-input">
+                        <input type="email" name="email" value="<?php echo $email; ?>" class="text-input">
                     </div>
                     <div>
                         <label>Password</label>
-                        <input type="password" name="password" value="" class="text-input">
+                        <input type="password" name="password" value="<?php echo $password; ?>" class="text-input">
                     </div>
                     <div>
                         <label>Password Confirmation</label>
-                        <input type="password" name="passwordConf" value="" class="text-input">
+                        <input type="password" name="passwordConf" value="<?php echo $passwordConf; ?>" class="text-input">
                     </div>
                     <div>
+                        <?php if (isset($admin) && $admin == 1) : ?>
                             <label>
                                 <input type="checkbox" name="admin" checked>
                                 Admin
                             </label>
+                        <?php else : ?>
+                            <label>
+                                <input type="checkbox" name="admin">
+                                Admin
+                            </label>
+                        <?php endif; ?>
+
+
                     </div>
+
                     <div>
                         <button type="submit" name="create-admin" class=" btn btn-big"><span>Add User</span></button>
                     </div>
@@ -61,6 +73,8 @@
             </div>
         </div>
         <!-- // Admin Content-->
+
+
     </div>
     <!-- //Page Wrapper -->
 </body>
