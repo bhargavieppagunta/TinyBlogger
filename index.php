@@ -1,4 +1,15 @@
-<?php include("path.php") ?>
+<?php include("path.php");
+include(ROOT_PATH . "/app/controllers/topics.php");
+$posts = array();
+$postsTitle = 'Recent Posts';
+
+if (isset($_GET['t_id'])) {
+    $posts = getPostsByTopicId($_GET['t_id']);
+    $postsTitle = "You searched for posts under '" . $_GET['name'] . "'";
+} else {
+    $posts = getPublishedPosts();
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -10,96 +21,57 @@
 </head>
 <body>
 <?php include(ROOT_PATH . "/app/includes/header.php"); ?>
+<?php include(ROOT_PATH . "/app/includes/messages.php"); ?>
     <!-- Page Wrapper -->
     <div class="page-wrapper">
         <!--Content-->
         <div class="content clearfix">
             <!-- Main Content -->
             <div class="main-content">
-            <h1 class="recent-post-title">Recent Posts</h1>
+                <h1 class="recent-post-title"><?php echo $postsTitle ?> </h1>
+                <?php 
+                $i = 0;
+                foreach ($posts as $post) : ?>
+                
+                <?php if ($i++ > 3) break; ?>
                     <div class="post clearfix">
-                        <img src="https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-15-pro-finish-select-202309-6-7inch_GEO_US?wid=2560&hei=1440&fmt=p-jpg&qlt=80&.v=1693009284541" class="post-image" alt="">
+                        <img src="<?php echo BASE_URL . '/assets/images/' . $post['image']; ?>" class="post-image" alt="">
                         <div class="post-preview">
-                            <h2><a href="single.php">iPhone 15, iPhone 15 Pro launched with new camera, titanium frame</a></h2>
-                            <i class="far fa-user">&nbsp;Bhargavi</i>
+                            <h2><a href="single.php?id=<?php echo $post['id']; ?>"><?php echo $post['title']; ?></a></h2>
+                            <i class="far fa-user">&nbsp;<?php echo $post['username']; ?></i>
                             &nbsp;
-                            <i class="far fa-calendar">&nbsp;March, 4th 2024</i>
+                            <i class="far fa-calendar">&nbsp;<?php echo date('F j, Y', strtotime($post['created_at'])); ?></i>
                             <p class="preview-text">
-                            After months of leaks, Apple has finally announced the new iPhone 15 series. This year too, the company has introduced four models
+                                <?php echo html_entity_decode(substr($post['body'], 0, 120) . '...'); ?>
                             </p>
-                            <a href="single.php" class="btn read-more">Read More</a>
+                            <a href="single.php?id=<?php echo $post['id']; ?>" class="btn read-more">Read More</a>
                         </div>
                     </div>
-                    <div class="post clearfix">
-                        <img src="https://images.thequint.com/thequint%2F2024-02%2F4c7972f5-91ad-4482-8696-16ae93d9e03e%2Fbumrah_2.webp?auto=format%2Ccompress&fmt=webp&width=720" class="post-image" alt="">
-                        <div class="post-preview">
-                            <h2><a href="single.php">Ind vs Eng: Jasprit Bumrah Rested for the Fourth Test</a></h2>
-                            <i class="far fa-user">&nbsp;Bhargavi</i>
-                            &nbsp;
-                            <i class="far fa-calendar">&nbsp;March, 4th 2024</i>
-                            <p class="preview-text">
-                            Indian pacer Jasprit Bumrah has been given rest for the fourth Test between India and England set to take place in Ranchi
-                            </p>
-                            <a href="single.php" class="btn read-more">Read More</a>
-                        </div>
-                    </div>
-                    <div class="post clearfix">
-                        <img src="https://images.thequint.com/thequint%2F2024-02%2Fc1f6098f-4283-4ce4-a092-ef45d83d4b32%2Fhero_image_nre_Recovered_Recovered_Recovered_Recovered_Recovered.jpg?auto=format%2Ccompress&fmt=webp&width=720" class="post-image" alt="">
-                        <div class="post-preview">
-                            <h2><a href="single.php">First Gen Z Indian-American to Contest US Senate Race</a></h2>
-                            <i class="far fa-user">&nbsp;Bhargavi</i>
-                            &nbsp;
-                            <i class="far fa-calendar">&nbsp;March, 4th 2024</i>
-                            <p class="preview-text">
-                            Twenty-four-year-old Indian-American software engineer Ashwin Ramaswami is all set to enter the American political arena.
-                            </p>
-                            <a href="single.php" class="btn read-more">Read More</a>
-                        </div>
-                    </div>
-                    <div class="post clearfix">
-                        <img src="https://images.thequint.com/thequint%2F2024-02%2F4c7972f5-91ad-4482-8696-16ae93d9e03e%2Fbumrah_2.webp?auto=format%2Ccompress&fmt=webp&width=720" class="post-image" alt="">
-                        <div class="post-preview">
-                            <h2><a href="single.php">Ind vs Eng: Jasprit Bumrah Rested for the Fourth Test</a></h2>
-                            <i class="far fa-user">&nbsp;Bhargavi</i>
-                            &nbsp;
-                            <i class="far fa-calendar">&nbsp;March, 4th 2024</i>
-                            <p class="preview-text">
-                                
-                            </p>
-                            <a href="single.php" class="btn read-more">Read More</a>
-                        </div>
-                    </div>
-                    <div class="post clearfix">
-                        <img src="https://images.thequint.com/thequint%2F2024-02%2Fc1f6098f-4283-4ce4-a092-ef45d83d4b32%2Fhero_image_nre_Recovered_Recovered_Recovered_Recovered_Recovered.jpg?auto=format%2Ccompress&fmt=webp&width=720" class="post-image" alt="">
-                        <div class="post-preview">
-                            <h2><a href="single.php">First Gen Z Indian-American to Contest US Senate Race</a></h2>
-                            <i class="far fa-user">&nbsp;Bhargavi</i>
-                            &nbsp;
-                            <i class="far fa-calendar">&nbsp;March, 4th 2024</i>
-                            <p class="preview-text">
-                            Twenty-four-year-old Indian-American software engineer Ashwin Ramaswami is all set to enter the American political arena.
-                            </p>
-                            <a href="single.php" class="btn read-more">Read More</a>
-                        </div>
-                    </div>
-                    <div class="post clearfix">
-                        <img src="https://images.thequint.com/thequint%2F2024-02%2F4c7972f5-91ad-4482-8696-16ae93d9e03e%2Fbumrah_2.webp?auto=format%2Ccompress&fmt=webp&width=720" class="post-image" alt="">
-                        <div class="post-preview">
-                            <h2><a href="single.php">Ind vs Eng: Jasprit Bumrah Rested for the Fourth Test</a></h2>
-                            <i class="far fa-user">&nbsp;Bhargavi</i>
-                            &nbsp;
-                            <i class="far fa-calendar">&nbsp;March, 4th 2024</i>
-                            <p class="preview-text">
-                                
-                            </p>
-                            <a href="single.php" class="btn read-more">Read More</a>
-                        </div>
-                    </div>
+                <?php endforeach; ?>
+            </div>
+            <!-- //Main Content -->
+            <div class="sidebar">
+               
+                <div class="section search">
+                    <h2 class="section-title">Search</h2>
+                    <form action="index.php" method="post">
+                        <input type="text" name="search-term" class="text-input" placeholder="Search...">
+                    </form>
+                </div>
+                <div class="section topics">
+                    <h2 class="section-title">Topics</h2>
+                    <ul>
+                    <?php foreach ($topics as $key => $topic): ?>
+                        <li><a href="<?php echo BASE_URL . '/index.php?t_id=' . $topic['id'] .'&name=' . $topic['name'] ?>"><?php echo $topic['name']; ?></a></li>
+                    <?php endforeach; ?>
+                    </ul>
+                </div>
+
             </div>
         </div>
         <!-- //Content -->
     </div>
     <!-- //Page Wrapper -->
-    <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
+<?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
 </body>
 </html>

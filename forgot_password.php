@@ -1,4 +1,6 @@
-<?php include("path.php") ?>
+<?php include("path.php"); 
+include(ROOT_PATH . "/app/controllers/users.php"); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +21,7 @@
                 Please enter your email address you need to sign up on this site 
                 and we will assist you in recovering your password.
             </p>
-
+            <?php include(ROOT_PATH . "/app/helpers/formErrors.php"); ?>
             <div>
                 <label>Email Address</label>
                 <input type="email" name="email" class="text-input">

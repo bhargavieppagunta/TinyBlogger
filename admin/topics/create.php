@@ -1,4 +1,5 @@
-<?php include("../../path.php"); ?>
+<?php include("../../path.php"); 
+include(ROOT_PATH . "/app/controllers/topics.php");
 ?>
 
 <!DOCTYPE html>
