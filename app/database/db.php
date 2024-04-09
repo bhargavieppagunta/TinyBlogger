@@ -146,12 +146,12 @@ function getPostsByTopicId($topic_id)
     $records = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
     return $records;
 }   
+
 function searchPosts($term)
 {
    $match = '%' . $term . '%'; 
    global $conn;
-    $sql = "SELECT 
-                p.*, u.username
+    $sql = "SELECT p.*, u.username
             FROM posts AS p 
             JOIN users AS u 
             ON p.user_id=u.id
