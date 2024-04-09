@@ -1,3 +1,6 @@
+<?php include("path.php");
+include(ROOT_PATH . "/app/controllers/users.php"); 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +14,9 @@
 <body>
 
     <div class="auth-content">
-        <form action="" method="post">
+        <form action="reset_password.php" method="post">
             <h2 class="form-title">Reset your Password</h2>
-
+            <?php include(ROOT_PATH . "/app/helpers/formErrors.php"); ?>
             <div>
                 <label>Password</label>
                 <input type="password" name="password" class="text-input">
