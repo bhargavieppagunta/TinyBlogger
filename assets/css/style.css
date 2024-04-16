@@ -43,6 +43,12 @@ a{
     line-height: 1.5rem;
 }
 
+.load-more {
+    width: 14%;
+    margin-left: 45%;
+    margin-right: 50%;
+}
+
 /* Nav Bar */
 header {
     background: #2f3d4d;
@@ -118,6 +124,7 @@ header .menu-toggle {
     text-align: center;
     margin: 30px auto;
 }
+
 
 /* FOOTER*/
 .footer {
