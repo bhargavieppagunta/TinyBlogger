@@ -3,6 +3,7 @@
 include(ROOT_PATH . "/app/database/db.php");
 include(ROOT_PATH . "/app/helpers/middleware.php");
 include(ROOT_PATH . "/app/helpers/validateUser.php");
+include(ROOT_PATH . "/app/controllers/emailController.php");
 
 
 $table = 'users';
@@ -63,6 +64,7 @@ if (isset($_POST['register-btn']) || isset($_POST['create-admin']) ) {
             $_POST['admin'] = 0;
             $user_id = create($table, $_POST);
             $user = selectOne($table, ['id' => $user_id]);
+            sendVerification($_POST['email'],$_POST['token']);
             loginUser($user);
         }
        
@@ -167,6 +169,7 @@ if (isset($_POST['forgotpass'])) {
         $result = mysqli_query($conn, $sql);
         $user = mysqli_fetch_assoc($result);
         $_POST['token']=$user['token'];
+        PasswordResetLink($email,$_POST['token']);
         header('location: password_message.php'); 
         exit();
     }
