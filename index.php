@@ -1,5 +1,6 @@
 <?php include("path.php");
 include(ROOT_PATH . "/app/controllers/topics.php");
+loggedinVerify();
 $posts = array();
 $postsTitle = 'Recent Posts';
 
