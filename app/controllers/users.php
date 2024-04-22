@@ -31,9 +31,10 @@ function loginUser($user)
 
     if ($_SESSION['admin']) {
         header('location: ' . BASE_URL . '/admin/dashboard.php');
-    } else if ($_SESSION['verified']=== 0){
+    } else if ($_SESSION['verified'] === 0){
         $_SESSION['message'] = 'Please Verify your mail before Login';
         $_SESSION['type'] = 'error';
+        sendVerification($user['email'], $user['token']);
         header('location: ' . BASE_URL . '/welcome.php');
     }
     else {
@@ -118,15 +119,40 @@ if (isset($_POST['login-btn'])) {
         $user = selectOne($table, ['username' => $_POST['username']]);
 
         if ($user && password_verify($_POST['password'], $user['password'])) {
-            loginUser($user);
+            // Generate OTP
+            $otp = generateOTP();
+            update($table, $user['id'], ['otp' => $otp]);
+            VerifyOTP($user['email'], $otp);
+            // Redirect to OTP verification page with user ID
+            header('location: ' . BASE_URL . '/otpVerify.php?user_id=' . $user['username']);
+            exit;
         } else {
-           array_push($errors, 'Wrong credentials');
+            array_push($errors, 'Wrong credentials');
         }  
     }
 
     $username = $_POST['username'];
     $password = $_POST['password'];
 }
+
+function generateOTP() {
+    // Generate a random 6-digit OTP
+    return mt_rand(100000, 999999);
+}
+
+if(isset($_POST['verify-btn'])){
+
+    if(count($errors) === 0) {
+        $user = selectOne($table, ['username' => $_POST['username']]);
+        $verifyOTP = ($_POST['otp'] == $user['otp']);
+        if($user && $verifyOTP){
+            loginUser($user);
+        } else {
+            array_push($errors, 'Please re-check OTP.');
+        } 
+    }
+}
+
 
 if (isset($_GET['delete_id'])) {
     adminOnly();

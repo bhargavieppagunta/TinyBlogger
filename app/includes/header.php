@@ -1,11 +1,11 @@
 <header>
-    <a href="<?php echo BASE_URL . '/index.php' ?>" class="logo">
+    <a href="<?php echo BASE_URL . '/' ?>" class="logo">
         <h2 class="logo-text"><span>Tiny Blogger</span></h2>
     </a>
     <i class="fa fa-bars menu-toggle"></i>
     <ul class="nav">
         <li>
-            <a href="<?php echo BASE_URL . '/index.php' ?>">Home</a>
+            <a href="<?php echo BASE_URL . '/' ?>">Home</a>
         </li>
         <li>
             <a href="<?php echo BASE_URL . '/about.php' ?>">About</a>
