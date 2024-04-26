@@ -6,6 +6,8 @@ include(ROOT_PATH . "/app/controllers/posts.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/b4bccc0b37.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../../assets/css/style.css">
     <link rel="stylesheet" href="../../assets/css/admin.css">
     
@@ -67,5 +69,9 @@ include(ROOT_PATH . "/app/controllers/posts.php");
 
     </div>
     <!-- //Page Wrapper -->
+    <!--JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--Custom Script-->
+    <script src="../../assets/js/scripts.js"></script>
 </body>
 </html>

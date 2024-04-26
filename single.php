@@ -13,6 +13,8 @@ $posts = getPublishedPosts();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/b4bccc0b37.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="assets/css/style.css">
     
     <title>Single Post</title>
@@ -68,5 +70,10 @@ $posts = getPublishedPosts();
     <!--footer-->
     <?php include(ROOT_PATH . "/app/includes/footer.php"); ?>
     <!--//footer-->
+    <!--JQuery-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        
+    <!--Custom Script-->
+    <script src="assets/js/scripts.js"></script>
 </body>
 </html>

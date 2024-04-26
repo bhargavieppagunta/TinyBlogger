@@ -6,6 +6,8 @@ include(ROOT_PATH . "/app/controllers/users.php");
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/b4bccc0b37.js" crossorigin="anonymous"></script>
     <!-- CUstume Styling -->
     <link rel="stylesheet" href="assets/css/style.css">
     
