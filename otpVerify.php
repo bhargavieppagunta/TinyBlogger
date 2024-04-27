@@ -12,8 +12,6 @@ if(isset($_GET['user_id'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--Font Awesome-->
     <script src="https://kit.fontawesome.com/b4bccc0b37.js" crossorigin="anonymous"></script>
-    <!--Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Monoton&family=Pacifico&display=swap" rel="stylesheet">
     <!-- CUstume Styling -->
     <link rel="stylesheet" href="assets/css/style.css">
     

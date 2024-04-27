@@ -33,6 +33,8 @@ adminOnly();
         <!-- // Admin Content -->
     </div>
     <!-- // admin-wrapper -->
+    <!--Custom Script-->
+    <script src="../../assets/js/scripts.js"></script>
 </body>
 
 </html>
