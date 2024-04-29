@@ -14,7 +14,8 @@ variables:
   phpVersion: '7.3'
   projectPath: '/c/xampp/htdocs/TinyBlogger'
 
-stage: Build
+stages:
+- stage: Build
   displayName: 'Build stage'
   jobs:
   - job: BuildJob
@@ -25,16 +26,12 @@ stage: Build
     - script: |
         # Display PHP version to verify installation
         php -version
-
         # Navigate to the root folder of your PHP project
         cd $(projectPath)
-
         # Install dependencies using Composer (specify absolute path to composer)
         C:\Users\nvams\AppData\Local\ComposerSetup\bin\composer install --no-interaction --prefer-dist
-
         # Run any additional commands needed for your build process
       displayName: 'Use PHP version 7.3 and Install Dependencies'
-
     - task: ArchiveFiles@2
       displayName: 'Archive files'
       inputs:
