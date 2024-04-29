@@ -5,8 +5,8 @@
             <div class="footer-section about">
             <h2 class="logo-text"><span>Tiny Bloggers</span></h2>
             <p>
-                Tiny Bloggers is a fictional blog Desinged for narrating and publishing your inspirational Journals.  
-                Young writers are encouraged to wirte thier Inspirational Stories.
+                Tiny Bloggers is a fictional blog desinged for narrating and publishing our inspirational News and Journals.  
+                Young writers are encouraged to wirte in our inspirational and News Stories.
             </p>
         <div class="contact">
             <span><i class="fas fa-phone"></i> &nbsp; 088-192-269</span>

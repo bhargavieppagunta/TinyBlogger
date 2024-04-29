@@ -12,13 +12,13 @@
         </li>
         
         <?php if (isset($_SESSION['id'])): ?>
-        <li>
-            <a href="#">
+            <li>
+            <a href="#" class="dropdown-toggle">
                 <i class="fa fa-user"></i>
                 <?php echo $_SESSION['username']; ?>
-                <i class="fa fa-chevron-down"style="fount-size: .8em"></i>
+                    <i class="fa fa-chevron-down"style="font-size: .8em"></i>
             </a>
-            <ul>
+                <ul class="dropdown-menu">
                 <?php if($_SESSION['admin']): ?>
                     <li><a href="<?php echo BASE_URL . '/admin/dashboard.php'?>">Dashboard</a></li>
                 <?php endif; ?>
