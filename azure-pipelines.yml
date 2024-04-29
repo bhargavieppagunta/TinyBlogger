@@ -6,32 +6,20 @@
 trigger:
 - main
 
+pool:
+  name: 'Default' 
+  vmImage: 'ubuntu-latest'
+
 variables:
-  # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: 'Tiny-Blogger subscription'  # Update with the correct service connection name
-
-  # Web app name
-  webAppName: 'Tiny-Blogger'
-
-  # Agent VM image name
-  vmImageName: 'ubuntu-latest'
-
-  # Environment name
-  environmentName: 'Tiny-Blogger'
-
-  # Root folder under which your composer.json file is available.
-  rootFolder: $(System.DefaultWorkingDirectory)
-
   phpVersion: '7.3'
   projectPath: '/c/xampp/htdocs/TinyBlogger'
 
 stages:
 - stage: Build
-  displayName: Build stage
+  displayName: 'Build stage'
   jobs:
   - job: BuildJob
-    pool:
-      vmImage: $(vmImageName)
+    displayName: 'Build job'
     steps:
     - script: |
         # Display PHP version to verify installation
@@ -74,7 +62,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy Azure Web App : TinyBlogger'
             inputs:
-              azureSubscription: 'Tiny-Blogger subscription'  # Reference the service connection variable
-              appName: '$(webAppName)'
+              azureSubscription: 'Tiny-Blogger subscription'  # Update with your Azure subscription service connection name
+              appName: 'Tiny-Blogger'
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
               appType: 'webapp'
