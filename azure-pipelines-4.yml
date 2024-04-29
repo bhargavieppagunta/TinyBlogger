@@ -8,7 +8,7 @@ trigger:
 
 variables:
   # Azure Resource Manager connection created during pipeline creation
-  azureSubscription: 'dc3d77b7-576e-4fdd-acde-e5146bbe4f2f'
+  azureSubscription: 'Tiny-Blogger subscription'
 
   # Web app name
   webAppName: 'Tiny-Blogger'
@@ -74,7 +74,7 @@ stages:
           - task: AzureWebApp@1
             displayName: 'Deploy Azure Web App : TinyBlogger'
             inputs:
-              azureSubscription: 'YourAzureSubscriptionName'
+              azureSubscription: 'Tiny-Blogger subscription'
               appName: 'Tiny-Blogger'
               package: '$(Pipeline.Workspace)/drop/$(Build.BuildId).zip'
               appType: 'webapp'
