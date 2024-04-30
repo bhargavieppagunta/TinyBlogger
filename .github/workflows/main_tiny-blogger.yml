@@ -62,5 +62,5 @@ jobs:
         with:
           app-name: 'Tiny-Blogger'
           slot-name: 'Production'
-          package: ./wwwroot/
+          package: .
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_0EC042D100274B0988743E42D299E2E5 }} 
