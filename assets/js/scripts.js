@@ -6,6 +6,12 @@ $(document).ready(function() {
     });
 });
 
+$(document).ready(function() {
+    $('.dropdown-toggle').click(function() {
+        $(this).siblings('.dropdown-menu').toggle();
+    });
+});
+
 ClassicEditor
     .create( document.querySelector( '#body' ), {
         toolbar: [ 'heading', '|', 'bold', 'italic', 'link', 'bulletedList', 'numberedList', 'blockQuote' ],
