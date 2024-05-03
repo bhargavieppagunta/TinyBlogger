@@ -57,7 +57,7 @@ jobs:
       
       - name: Export MySQL database
         run: |
-          mysqldump -u [username] -p"${MYSQL_PASSWORD}" [database_name] > dump.sql
+          mysqldump -u [username] -p"${MYSQL_PASSWORD}" [database_name] --socket=/mnt/c/xampp/mysql/mysql.sock > dump.sql
         env:
           MYSQL_PWD: ${{ secrets.MYSQL_PASSWORD }}
 
@@ -78,6 +78,6 @@ jobs:
 
       - name: Import MySQL database
         run: |
-          mysql -u [root] -p"${MYSQL_PASSWORD}" [blog] < dump.sql
+          mysql -u [root] -p"${MYSQL_PASSWORD}" [blog] --socket=/mnt/c/xampp/mysql/mysql.sock < dump.sql
         env:
           MYSQL_PWD: ${{ secrets.MYSQL_PASSWORD }}
